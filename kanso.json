@@ -2,19 +2,30 @@
 	"name": "recipe-couch",
 	"version": "0.0.1",
 	"description": "An app for managing recipes",
-	"attachments": ["index.html", "static"],
+	"attachments": ["templates", "static"],
 	"modules": "lib",
+	"load": "lib/app",
 	"less": {
 		"compress": true,
 		"compile": "static/css/main.less",
 		"remove_from_attachments": true
 	},
+	"dust": {
+		"templates": "templates"
+	},
+	"duality": {
+		"base_template": "base.html"
+	},
 	"dependencies": {
 		"attachments": null,
 		"modules": null,
+		"properties": null,
 		"db": null,
 		"less-precompiler": null,
 		"bootstrap":null,
-		"jquery": null
+		"jquery": null,
+		"duality": null,
+		"dust": null,
+		"duality-dust": null
 	}
 }
