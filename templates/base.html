@@ -31,22 +31,16 @@ body {
 		<div class="nav-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li{?activeHome} class="active"{/activeHome}><a href="{baseURL}/index.html">Home</a></li>
-				<li{?activeNew} class="active"{/activeNew}><a href="{baseURL}/_shows/edit">Rezept hinzufügen</a></li>
+				<li{?activeNew} class="active"{/activeNew}><a href="{baseURL}/edit/">Rezept hinzufügen</a></li>
 				<li{?activeAbout} class="active"{/activeAbout}><a href="#about">About</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-		<div class="pull-right">
-			<form class="form-inline" style="margin:7px 0">
-				<div class="input-group">
-					<input class="span2" type="search"></input>
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="submit">Search</button>
-					</span>
-				</div>
+			<form class="navbar-form pull-right">
+				<input type="search" class="form-control" style="width: 200px;">
+				<button type="submit" class="btn btn-default">Search</button>
 			</form>
-		</div>
-	</div><!--/.nav-collapse -->
-		</div>
+		</div><!--/.nav-collapse -->
+	</div>
 </div>
 
 <div class="container">
