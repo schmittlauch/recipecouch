@@ -1,6 +1,6 @@
 {
     "name": "bootstrap",
-    "version": "2.9.9-kanso.1",
+    "version": "3.0.0-kanso.1",
     "categories": ["frontend"],
     "maintainers": [
         {
@@ -10,8 +10,8 @@
     ],
     "url": "http://github.com/mandric/kanso-bootstrap",
     "attachments": [
-        "bootstrap/img",
-        "bootstrap/js"
+        "bootstrap/js",
+		"bootstrap/ico"
     ],
     "less": {
         "paths": ["."]
