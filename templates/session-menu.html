@@ -1,0 +1,18 @@
+{#userCtx}
+<li class="dropdown">
+<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">
+	{?name}{name} {:else}Login{/name}
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+	{?name}
+	<li class="logout"><a href="#" id="logout_link">Logout</a>
+	{:else}
+	<form id="login_form" action="{baseURL}/login/" method="post" class="pull-right" style="padding:5px;">
+		<li><input class="form-control" name="user" type="text"/></li>
+		<li><input class="form-control" name="pass" type="password"/>
+		<button type="submit" class="btn btn-primary">Sign in</button></li>
+	</form>
+	{/name}
+</ul>
+</li>
+{/userCtx}

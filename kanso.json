@@ -27,6 +27,8 @@
 		"duality": null,
 		"dust": null,
 		"duality-dust": null,
-		"couchtypes":null
+		"couchtypes": null,
+		"session": null,
+		"users": null
 	}
 }
