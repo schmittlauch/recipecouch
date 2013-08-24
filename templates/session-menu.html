@@ -8,9 +8,17 @@
 	<li class="logout"><a href="#" id="logout_link">Logout</a>
 	{:else}
 	<form id="login_form" action="{baseURL}/login/" method="post" class="pull-right" style="padding:5px;">
-		<li><input class="form-control" name="user" type="text"/></li>
-		<li><input class="form-control" name="pass" type="password"/>
-		<button type="submit" class="btn btn-primary">Sign in</button></li>
+		<li id="general_login_errors"></li>
+		<li class="username field">
+		<input class="form-control" name="user" type="text"/>
+		<div class="errors"></div>
+		</li>
+		<li class="password field">
+		<input class="form-control" name="pass" type="password"/>
+		<div class="errors"></div>
+		</li>
+		<div class="spinner" style="display:none;"></div>
+		<input type="submit" class="btn btn-primary" value="Sign in"/>
 	</form>
 	{/name}
 </ul>
