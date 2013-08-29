@@ -3,23 +3,24 @@
 <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">
 	{?name}{name} {:else}Login{/name}
 <span class="caret"></span></button>
-<ul class="dropdown-menu">
+<ul class="dropdown-menu" id="session-menu">
 	{?name}
 	<li class="logout"><a href="#" id="logout_link">Logout</a>
 	{:else}
 	<form id="login_form" action="{baseURL}/login/" method="post" class="pull-right" style="padding:5px;">
 		<li id="general_login_errors"></li>
 		<li class="username field">
-		<input class="form-control" name="user" type="text"/>
+		<input class="form-control" name="user" type="text" placeholder="username"/>
 		<div class="errors"></div>
 		</li>
 		<li class="password field">
-		<input class="form-control" name="pass" type="password"/>
+		<input class="form-control" name="pass" type="password" placeholder="password"/>
 		<div class="errors"></div>
 		</li>
 		<div class="spinner" style="display:none;"></div>
 		<input type="submit" class="btn btn-primary" value="Sign in"/>
 	</form>
+	<a  href="{baseURL}/create_user">Create new account</a>
 	{/name}
 </ul>
 </li>
