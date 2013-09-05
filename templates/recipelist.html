@@ -1,5 +1,11 @@
-<div class="container col-lg-offset-3 col-lg-3">
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bs-sidebar affix-top hidden-print" id="affixBs">
+		</div>
+	</div>
+	<div class="col-lg-3">
 	{#recipes}
-	<p class="listitem"><a href="{baseURL}/recipe/{id}">{key}</a></p>
+	<p class="listitem" data-spy="affix" data-offset-top="200"><a href="{baseURL}/recipe/{id}">{key[1]}</a></p>
 	{/recipes}
+</div>
 </div>
