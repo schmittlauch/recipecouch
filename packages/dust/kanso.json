@@ -1,9 +1,9 @@
 {
     "name": "dust",
-    "version": "0.3.0",
+    "version": "2.0.3-kanso.1",
     "categories": ["templating"],
     "description": "Asynchronous templates for the browser and node.js",
-    "url": "http://akdubya.github.com/dustjs/",
+    "url": "http://linkedin.github.io/dustjs/",
     "modules": "dust.js",
     "dependencies": {
         "modules": ">=0.0.8"
