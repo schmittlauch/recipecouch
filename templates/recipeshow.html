@@ -1,10 +1,10 @@
 <h2 class="recipeheading">{doc.name}</h2>
 <i>by {doc.createdBy}</i><br>
-{?userCtx}<span class="pull-right">
+{?userCtx.name}<span class="pull-right">
 	<a class="btn btn-info"  
 		{?editable}href="{baseURL}/edit/{doc._id}">Edit recipe</a>
 	{:else}href="{baseURL}/fork/{doc._id}">Fork this recipe</a>{/editable}
-</span>{/userCtx}
+</span>{/userCtx.name}
 <div class="form-label"><label for="ingredients">Ingredients</label></div>
 <div id="ingredients">{doc.ingredients}</div>
 
