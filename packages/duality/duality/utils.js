@@ -161,7 +161,5 @@ exports.getBaseURL = function (/*optional*/req) {
 exports.redirect = function (/*optional*/req, url) {
     url = url || '/';
     var baseURL = exports.getBaseURL(req);
-	console.log(baseURL + url);
-	log(baseURL + url);
     return {code: 302, headers: {'Location': baseURL + url}};
 };
