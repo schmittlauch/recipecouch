@@ -2,4 +2,4 @@
 *.swo
 *.swn
 *~
-packages/*/.git
+packages/*/.git/
