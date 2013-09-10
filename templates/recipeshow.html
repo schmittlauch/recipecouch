@@ -6,10 +6,10 @@
 	{:else}href="{baseURL}/fork/{doc._id}">Fork this recipe</a>{/editable}
 </span>{/userCtx.name}
 <div class="form-label"><label for="ingredients">Ingredients</label></div>
-<div id="ingredients">{doc.ingredients}</div>
+<div id="ingredients">{doc.ingredientsHTML|s}</div>
 
 <div class="form-label"><label for="preparation">Preparation</label></div>
-<div id="preparation">{doc.preparation}</div>
+<div id="preparation">{doc.preparationHTML|s}</div>
 
 <div class="form-label"><label for="tags">Tags</label></div>
 <div id="tags">{#doc.tags}<a href="{baseURL}/tag/{.|uc}"> {.|h}</a> {/doc.tags}</div>
