@@ -1,5 +1,24 @@
 @import "bootstrap/less/bootstrap.less";
 
+@font-face {
+	font-family: 'Entypo';
+	src: url('static/fonts/Entypo/entypo.eot');
+	src: local('☺'), 
+	url('../fonts/entypo.woff') format('woff'), 
+	url('../fonts/entypo.ttf') format('truetype'),
+	url('../fonts/entypo.svg#webfontIyfZbseF') format('svg');
+}
+
+.icon {
+    font-family: 'Entypo';
+    //font-size: 22px;
+}
+
+.icon:before {
+    content: attr(data-icon);
+}
+
+
 .search-form {
 	input {
 		border-radius: @border-round 0px 0px @border-round;
