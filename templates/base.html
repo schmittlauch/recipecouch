@@ -20,15 +20,18 @@ body {
 {extrahead|s}
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href="{baseURL}/">Rezeptecouch</a>
-		<div class="nav-collapse collapse">
+<header class="navbar navbar-default navbar-inverse navbar-fixed-top" role="banner">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+				<span class="sr-only"Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{baseURL}/">Rezeptecouch</a>
+		</div>
+		<div class="navbar-collapse navbar-main-collapse">
 			<ul id="topnav" class="nav navbar-nav">
 				<li id="listNavLink"><a href="{baseURL}/recipelist">List of recipes</a></li>
 				<li id="editNavLink"><a href="{baseURL}/edit/">Rezept hinzufügen</a></li>
@@ -36,12 +39,15 @@ body {
 				<li id="contactNavLink"><a href="#contact">Contact</a></li>
 				<li id="session-menu" class="navbar-right"></li>
 			</ul>
-			<form class="nav search-form navbar-form pull-right" method="GET" action="{baseURL}/search">
-				<input type="search" name="squery" class="form-control" style="width: 200px;">
-				<button type="submit" class="btn btn-default">Search</button>
+			<form class="search-form navbar-form navbar-right" method="GET" action="{baseURL}/search" role="search">
+				<div class="form-group">
+					<input type="search" name="squery" class="form-control" style="width: 200px;">
+					<button type="submit" class="btn btn-default">Search</button>
+				</div>
 			</form>
-		</div><!--/.nav-collapse -->
-</nav>
+		</div>
+	</div>
+</header>
 
 <div class="container col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" id="content">
 	{content|s}
