@@ -8,10 +8,10 @@
             "url": "http://m.andric.us"
         }
     ],
-    "url": "http://github.com/mandric/kanso-bootstrap",
+    "url": "http://github.com/kanso/bootstrap",
     "attachments": [
         "bootstrap/js",
-		"bootstrap/ico"
+        "bootstrap/ico"
     ],
     "less": {
         "paths": ["."]

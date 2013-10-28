@@ -6,6 +6,8 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="stylesheet" href="{baseURL}/static/css/main.css">
+<!--<link rel="stylesheet" href="{baseURL}/static/css/bootstrap.min.css">-->
+
 <!-- Custom styles for this template -->
 <style>
 body {
@@ -31,7 +33,7 @@ body {
 			</button>
 			<a class="navbar-brand" href="{baseURL}/">Rezeptecouch</a>
 		</div>
-		<div class="navbar-collapse navbar-main-collapse">
+		<div class="collapse navbar-collapse navbar-main-collapse">
 			<ul id="topnav" class="nav navbar-nav">
 				<li id="listNavLink"><a href="{baseURL}/recipelist">List of recipes</a></li>
 				<li id="editNavLink"><a href="{baseURL}/edit/">Rezept hinzufügen</a></li>
@@ -48,6 +50,8 @@ body {
 		</div>
 	</div>
 </header>
+
+
 
 <div class="container col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2" id="content">
 	{content|s}
