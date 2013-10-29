@@ -22,7 +22,7 @@ body {
 {extrahead|s}
 </head>
 <body>
-<header class="navbar navbar-default navbar-inverse navbar-fixed-top" role="banner">
+<!--<header class="navbar navbar-default navbar-inverse navbar-fixed-top" role="banner">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -38,17 +38,46 @@ body {
 				<li id="listNavLink"><a href="{baseURL}/recipelist">List of recipes</a></li>
 				<li id="editNavLink"><a href="{baseURL}/edit/">Rezept hinzufügen</a></li>
 				<li id="aboutNavLink"><a href="#about">About</a></li>
-				<li id="contactNavLink"><a href="#contact">Contact</a></li>
 				<li id="session-menu" class="navbar-right"></li>
 			</ul>
-			<form class="search-form navbar-form navbar-right" method="GET" action="{baseURL}/search" role="search">
+			<form class="search-form navbar-form navbar-left" method="GET" action="{baseURL}/search" role="search">
 				<div class="form-group">
-					<input type="search" name="squery" class="form-control" style="width: 200px;">
+					<input type="search" name="squery" class="form-control">
 					<button type="submit" class="btn btn-default">Search</button>
 				</div>
 			</form>
 		</div>
 	</div>
+</header>-->
+<header class="navbar navbar-default navbar-inverse navbar-fixed-top" role="banner">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="{baseURL}">Rezeptecouch</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<nav class="collapse navbar-collapse navbar-main-collapse" role="navigation">
+		<ul id="topnav" class="nav navbar-nav">
+			<li id="listNavLink"><a href="{baseURL}/recipelist">List of recipes</a></li>
+			<li id="editNavLink"><a href="{baseURL}/edit/">Rezept hinzufügen</a></li>
+			<li id="aboutNavLink"><a href="#about">About</a></li>
+		</ul>
+		<form class="navbar-form navbar-left search-form" role="search" method="GET" action="{baseURL}/search">
+			<div class="form-group">
+				<input type="text" class="form-control" name="squery" placeholder="Search" />
+			</div>
+			<button type="submit" class="btn btn-default"><span class="icon" data-icon="&#128269;"></span></button>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+			<li id="session-menu"></li>
+		</ul>
+	</nav><!-- /.navbar-collapse -->
 </header>
 
 
