@@ -1,6 +1,6 @@
 /* ========================================================================
- * Bootstrap: tab.js v3.0.0
- * http://twbs.github.com/bootstrap/javascript.html#tabs
+ * Bootstrap: tab.js v3.0.3
+ * http://getbootstrap.com/javascript/#tabs
  * ========================================================================
  * Copyright 2013 Twitter, Inc.
  *
@@ -132,4 +132,4 @@
     $(this).tab('show')
   })
 
-}(window.jQuery);
+}(jQuery);
