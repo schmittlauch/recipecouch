@@ -10,8 +10,7 @@
     ],
     "url": "http://github.com/kanso/bootstrap",
     "attachments": [
-        "bootstrap/js",
-        "bootstrap/ico"
+        "bootstrap/js"
     ],
     "less": {
         "paths": ["."]
